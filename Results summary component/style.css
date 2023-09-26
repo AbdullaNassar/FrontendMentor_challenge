@@ -1,0 +1,101 @@
+html{
+    font-size: 10px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+   
+}
+
+.first{
+    background-color: #593FF9;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0 0 30px 30px;
+}
+.first h3{
+    font-size: 3rem;
+    color: #ddd;
+}
+.first .score{
+    width: 10rem;
+    height: 10rem;
+    background-color: #4827D4;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.score h1{
+    font-size: 3rem;
+}
+.first p{
+    color: #ddd;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.first h2{
+    font-size: 3rem;
+}
+
+.second{
+    font-size:1.6rem ;
+    padding: 2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.container .item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2FBFA;
+    padding: 1rem;
+    border-radius: 0.5rem;
+
+}
+.second button{
+    border: none;
+    background-color: #303C58;
+    color: white;
+    height: 4rem;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.second button:hover{
+    background-color: #603FFC;
+}
+@media (min-width:668px){
+    .all{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .second, .first{
+        width: 28%;
+        min-height: 60%;
+    }
+    .first{
+        display: flex;
+        justify-content: center;
+        border-radius:  30px;
+    }
+}
